@@ -6,7 +6,7 @@
 
 ## نصب و راه‌اندازی
 
-```python
+```bash
 git clone https://github.com/ali-0315/aparat_playlist_downloader.git
 cd aparat_playlist_downloader
 pip3 install -r requirements.txt

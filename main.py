@@ -18,10 +18,10 @@ def download_video(video_url, output_path):
         print('Failed to download the video.')
 
 
-print('get me the palylist id: ')
+print('give me a Aparat playlist id: ')
 playlist_id = str(input())
 api_url = f'https://www.aparat.com/api/fa/v1/video/playlist/one/playlist_id/{playlist_id}'
-print('get me the quality: (Examples: 144 , 240 , 360 , 480 , 720 , 1080) ')
+print('give me the quality: (Examples: 144 , 240 , 360 , 480 , 720 , 1080) ')
 quality = str(input())
 
 response = requests.get(api_url)

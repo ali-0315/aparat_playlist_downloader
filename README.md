@@ -1,13 +1,23 @@
 # دانلود ویدئو های پلی لیست آپارات
 این اسکریپت به شما امکان می‌دهد ویدئوهای موجود در یک پلی لیست آپارات را با کیفیت مورد نظر دانلود کنید.
 
-## نصب و راه‌اندازی
+## نصب و راه‌اندازی (Linux)
 
 ```bash
 git clone https://github.com/ali-0315/aparat_playlist_downloader.git
 cd aparat_playlist_downloader
 pip3 install -r requirements.txt
 python3 main.py
+```
+
+
+## نصب و راه‌اندازی (Windows)
+
+```bash
+git clone https://github.com/ali-0315/aparat_playlist_downloader.git
+cd aparat_playlist_downloader
+pip install -r requirements.txt
+python main.py
 ```
 
 

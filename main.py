@@ -46,8 +46,10 @@ if response.status_code == 200:
             if video_response.status_code == 200:
                 video_data = video_response.json()
                 video_download_link_all = video_data['data']['attributes']['file_link_all']
+                found_flag = False
                 for video_download_link in video_download_link_all:
                     if video_download_link['profile'] == quality + 'p':
+                        found_flag = True
                         if for_download_manager:
                             with open(f'{play_list_title}.txt', 'a') as links_txt:
                                 links_txt.write(f'{video_download_link["urls"][0]}\n')
@@ -55,6 +57,17 @@ if response.status_code == 200:
                             download_url = video_download_link['urls'][0]
                             output_path = f'Downloads/{play_list_title}/{video_title}-{quality}p.mp4'
                             download_video(download_url, output_path)
+                if not found_flag:
+                    video_download_link = video_download_link_all[-1]
+                    if for_download_manager:
+                        print(f'Failed to find video ({video_title}) with selected quality; Add another quality link inside')
+                        with open(f'{play_list_title}.txt', 'a') as links_txt:
+                            links_txt.write(f'{video_download_link["urls"][0]}\n')
+                    else:
+                        print(f'Failed to find video ({video_title}) with selected quality; Download another quality inside')
+                        download_url = video_download_link['urls'][0]
+                        output_path = f'Downloads/{play_list_title}/{video_title}-{quality}p.mp4'
+                        download_video(download_url, output_path)
     if for_download_manager:
         print(f'{play_list_title}.txt created')
 else:

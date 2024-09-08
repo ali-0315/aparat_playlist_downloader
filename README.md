@@ -33,6 +33,6 @@ python main.py
 
 
 ## با تشکر از
-<a href="https://github.com/AliAkbarSobhanpour">علی اکبر سبحانپور</a>
+<a href="https://github.com/AliAkbarSobhanpour">علی اکبر سبحانپور</a><br>
 <a href="https://github.com/AlirezaSakhtemanian">علیرضا</a>
 

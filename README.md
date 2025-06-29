@@ -152,6 +152,29 @@ except Exception as e:
    ```
 5. ایجاد **Pull Request**
 
+## 🙏 تشکر و قدردانی
+<div align="center">
+  <h3>با تشکر ویژه از عزیزان</h3>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/AliAkbarSobhanpour">
+          <img src="https://github.com/AliAkbarSobhanpour.png" width="100px;" alt="علی اکبر سبحانپور"/>
+          <br />
+          <sub><b>علی اکبر سبحانپور</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/AlirezaSakhtemanian">
+          <img src="https://github.com/AlirezaSakhtemanian.png" width="100px;" alt="علیرضا"/>
+          <br />
+          <sub><b>علیرضا</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ---
 
 <div align="center">
